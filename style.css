@@ -1,0 +1,201 @@
+/********************
+        RESET
+********************/
+
+*
+{
+
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+    font-size: 18px;
+
+}
+
+*,
+*::before,
+*::after
+{
+    box-sizing: border-box;
+}
+
+body
+{
+
+    line-height: 1.6;
+
+    /***********************************************
+
+        This makes text easier to read on Chrome
+        and Safari.
+
+    ***********************************************/
+    -webkit-font-smoothing: antialiased;
+
+    /***********************************************
+
+        This changes the color of font from black
+        to a soft-black/gray so that the contrast
+        between the dark font-colorr and white
+        background-color is less harsh and easier
+        to read.
+
+    ***********************************************/
+    /*color: #444444;
+    background-color: #DAD7CD;*/
+
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;*/
+    min-height: 100vh;
+
+    /*border: orange 3px solid;*/
+
+}
+
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg
+{
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select
+{
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    overflow-wrap: break-word;
+}
+
+p
+{
+    text-wrap: pretty;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    margin: revert;
+    text-wrap: balance;
+}
+
+h1,
+h2,
+h3
+{
+    line-height: 1.2;
+}
+
+h1
+{
+    font-size: 2.0rem;
+}
+
+h2
+{
+    font-size: 1.5rem;
+}
+
+h3
+{
+    font-size: 1.0rem;
+}
+
+
+/*:nth-child(odd)
+{
+    border: solid 1px blue;
+}
+
+:nth-child(even)
+{
+    border: solid 1px red;
+}*/
+
+
+/********************
+********************/
+
+.container
+{
+
+    display: grid;
+
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+
+}
+
+.sidebar
+{
+
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+
+    color: white;
+    background-color: blue;
+
+    display: grid;
+    text-align: left;
+    font-weight: bold;
+    padding: 1rem;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(13, 1fr);
+
+}
+
+.header
+{
+
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+#search-bar
+{
+
+    border: black 1px solid;
+
+}
+
+.main-content
+{
+
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+}
