@@ -190,6 +190,15 @@ h3
 
 }
 
+.sidebar-links
+{
+
+    display: flex;
+
+    align-items: center;
+
+}
+
 .dashboard-title
 {
 
@@ -313,12 +322,16 @@ input[type = "search"]
     font-size: 12px;
     text-wrap: nowrap;
 
+    font-weight: bold;
+
 }
 
 .hello-text-big
 {
 
     text-wrap: nowrap;
+
+    font-weight: bold;
 
 }
 
@@ -355,7 +368,9 @@ input[type = "search"]
 
     display: grid;
     padding: 20px;
-    gap: 20px;
+    /*gap: 20px;*/
+    row-gap: .5rem;
+    column-gap: 1rem;
 
     background-color: #DDDDDD;
 
@@ -399,12 +414,34 @@ input[type = "search"]
 
 }
 
+.project-card
+{
+
+    position: relative;
+
+}
+
 .project-card-3
 {
 
-    display: grid;
+    /*display: grid;
 
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);*/
+
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+
+    display: flex;
+
+    justify-content: end;
+
+}
+
+.project-card-3 img
+{
+
+    margin-right: .5rem;
 
 }
 
@@ -473,6 +510,36 @@ input[type = "search"]
 
     grid-column: 2 / 3;
     grid-row: 4 / 5;
+
+    display: grid;
+
+    grid-template-rows: repeat(4, 1fr);
+
+    min-width: 12rem;
+
+}
+
+.trending-cards *
+{
+
+    font-size: 10px;
+    text-wrap: nowrap;
+
+}
+
+.user-card
+{
+
+    display: flex;
+
+    justify-content: start;
+
+}
+
+.user-card > div
+{
+
+    /*margin-left: .25rem;*/
 
 }
 
